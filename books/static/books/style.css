@@ -1,0 +1,16 @@
+#Hello{
+      background-image: linear-gradient(50deg, #2c2418 0%, #060111 74%);
+      flex-wrap: wrap;
+}
+.jumbotron{
+
+   background-image: linear-gradient(50deg, #b68b49 0%, #d19135 74%);
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+
+}
+
+.something{
+   color: white;
+}

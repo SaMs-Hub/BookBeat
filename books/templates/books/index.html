@@ -1,0 +1,54 @@
+{% extends 'books/base.html' %}
+{% block body %}
+<html>
+<head>
+    <title>
+        BookBeat
+    </title>
+
+
+</head>
+<body id="Hello">
+<div class=" col-md-12 jumbotron">
+  <h1>BookBeat</h1>
+  <p id="Underline">Where your Passion for Books starts</p>
+</div>
+<div class=" col-md-12 jumbotron second-jumbo" name="fig">
+   <div class="col-md-12 span-2">
+  <h2>Hand-Picked Books</h2>
+
+   </div>
+</div>
+
+        <ul>
+            {% for book in object_list %}
+             <div class="col-lg-3 col-md-4 col-sm-6 " >
+      <div class = "thumbnail">
+         <img src = "{{book.book_image}}" alt = "Generic placeholder thumbnail">
+
+
+         <div class = "caption">
+          <h3>{{book.name}}</h3>
+          <p>{{book.author}}</p>
+
+          <p>
+             <a href = "{% url 'books:detail' book.id %}" class = "btn btn-primary" role = "button">
+                Details
+              </a>
+
+              <a href = "#" class = "btn btn-danger" role = "button">
+                 Delete
+              </a>
+         </p>
+         </div>
+      </div>
+
+
+   </div>
+            {% endfor %}
+        </ul>
+</body>
+
+</html>
+
+{% endblock %}
