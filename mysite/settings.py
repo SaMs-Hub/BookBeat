@@ -28,7 +28,7 @@ SECRET_KEY = 'v5*tuz!voqy=a^wcmb$_i#t-*y$^j*tznzumzmfv9afkkx1#0v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1:8000','book2beat.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1:8000','book-beat.herokuapp.com/']
 
 
 # Application definition
